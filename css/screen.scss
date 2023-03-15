@@ -317,6 +317,21 @@ a:active {
 */
 
 .o-row {
+  padding: $space-m $space-m 0;
+  display: flow-root;
+
+  &--dark {
+    color: white;
+    background-color: rgb(90, 90, 90);
+  }
+  &--primary {
+    background-color: $color-primary;
+  }
+  &--lg {
+    @include mq(bp4) {
+      padding: $space-xl $space-xl 0;
+    }
+  }
 }
 
 /*
@@ -326,8 +341,9 @@ a:active {
 */
 
 .o-container {
+  max-width: 50rem;
+  margin: auto;
 }
-
 /*
     Objects: Layout
     ---
