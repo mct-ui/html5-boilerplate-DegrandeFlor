@@ -328,8 +328,8 @@ a:active {
     background-color: $color-primary;
   }
   &--lg {
-    @include mq(bp4) {
-      padding: $space-xl $space-xl 0;
+    @media (min-width: 769px) {
+      padding: $space-xl $space-xl $space-m;       
     }
   }
 }
