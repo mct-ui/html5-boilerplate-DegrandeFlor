@@ -322,7 +322,7 @@ a:active {
 
   &--dark {
     color: white;
-    background-color: rgb(90, 90, 90);
+    background-color: hsl($color-gray-hue, $color-gray-saturation, 10%);
   }
   &--primary {
     background-color: $color-primary;
