@@ -262,7 +262,7 @@ blockquote {
   font-family: $font-family-secondary;
   font-style: italic;
   font-size: $ms3;
-  line-height: calc(baseline * 4);
+  line-height: calc($baseline * 4);
   margin-bottom: $space-m;
 }
 
@@ -281,15 +281,20 @@ hr {
 }
 
 a {
+  color: $color-primary;
+  transition: all 0.1s ease-in-out;
 }
 
 a:hover {
+  color: $color-primary-light;
 }
 
 a:visited {
+  color: $color-primary;
 }
 
 a:active {
+  color: $color-primary-dark;
 }
 
 /*---------------------------------------/*
